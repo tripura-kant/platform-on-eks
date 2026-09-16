@@ -1,1 +1,13 @@
 scripts/daily-push.log
+
+# Terraform
+**/.terraform/
+**/.terraform.lock.hcl
+**/*.tfstate
+**/*.tfstate.*
+**/terraform.tfvars
+**/*.tfvars.json
+crash.log
+
+# bootstrap state is committed on purpose (local backend bootstrap)
+!bootstraps/terraform.tfstate
